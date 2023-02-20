@@ -1,38 +1,319 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+}
+
+:root {
+  --color: #333D4B;
+}
+
+button {
+  padding: 15px 30px;
+  border-radius: 6px;
+  background-color:#0E8784;
+  border: 0;
+  font-weight: 900;
+  font-size: 18px;
+  font-family: 'Fraunces';
+  transition-property: background-color;
+  transition-duration: 0.4s;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:  #66D2CF;
+  box-shadow: 0 0 50 rgb(0, 0, 0) !important;
+}
+
+button:active {
+  opacity: 0.8;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav h3 {
+  color: var(--color);
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Fraunces';
+}
+
+header ul {
+  display: flex;
+  gap: 32px;
+}
+
+header ul li {
+  list-style: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  color: #83888F;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header ul li:hover {
+  color: var(--color);
+}
+
+.hero {
+  /* background-image: url(../images/Bitmap.png); */
+  background-color: #2C343E;
+  padding: 117px 0 117px 85px;
+  border-radius: 10px;
+}
+
+.hero__item {
+  width: 493px;
+}
+
+.hero h1 {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  font-family: 'Fraunces';
+  color: rgb(255, 255, 255);
+}
+
+.hero p {
+  line-height: 26px;
+  color: #FEFCF7;
+  opacity: 0.8;
+  margin: 32px 0 56px;
+}
+
+.collection {
+  margin: 262px 0 188px;
+  padding: 0 85px;
+  position: relative;
+}
+
+.our {
+  position: absolute;
+  font-weight: 900;
+  font-size: 155px;
+  font-family: 'Fraunces';
+  top: -100px;
+  z-index: -1;
+  background: -webkit-linear-gradient(270deg, rgb(131 136 143 / 40%) 0%, #FEFCF7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.collection__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.collection__list li {
+  width: 245px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.collection__list li h3 {
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--color);
+  font-family: 'Fraunces';
+  margin: 71px 0 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.collection__list p {
+  line-height: 26px;
+  color: var(--color);
+}
+
+.choose {
+  text-align: center;
+  color: white;
+  background: #2C343E;
+  border-radius: 10px;
+  padding: 100px 0 317px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+
+.choose__item {
+  width: 540px;
+}
+
+.choose h2 {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 32px;
+  font-family: 'Fraunces';
+}
+
+.choose p {
+  line-height: 26px;
+  opacity: 0.8;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  bottom: -151px;
+}
+
+.card {
+  background: #0E8784;
+  border-radius: 8px;
+  width: 350px;
+  padding: 72px 48px 48px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card__title {
+  font-weight: 900;
+  font-size: 24px;
+  margin: 56px 0 24px;
+  font-family: 'Fraunces';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.works {
+  margin: 351px 0 200px 85px;
 }
+
+.works h3 {
+  font-weight: 900;
+  font-size: 24px;
+  font-family: 'Fraunces';
+  color: #83888F;
+  margin-bottom: 80px;
+
+}
+
+.srcles {
+  display: flex;
+  justify-content: space-between;
+  width: 791px;
+  position: relative;
+}
+
+.srcle {
+  border: 2px solid #0E8784;
+  background-color: white;
+  width: 31px;
+  height: 31px;
+  display: inline-block;
+  border-radius: 50%;
+
+}
+
+.hr {
+  border: 2px solid #FDD6BA;
+  background-color: #FDD6BA;
+  width: 760px;
+  position: absolute;
+  top: 42%;
+  z-index: -1;
+  left: 15.5px;
+}
+.list__item{
+  margin: 67px 0 64px;
+  display: flex;
+  gap: 95px;
+}
+.list__item li{
+  width: 285px;
+  list-style: none;
+}
+
+.list__item h1 {
+  font-weight: 900;
+  font-size: 72px;
+  color: #FDD6BA;
+  font-family: 'Fraunces';
+}
+
+.list__item h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  font-family: 'Fraunces';
+  margin: 38px 0 42px;
+}
+.list__item p{
+  line-height: 26px;
+  color: var(--color);
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 85px;
+  background-color: var(--color);
+  color: white;
+  align-items: center;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-nav h3 {
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Fraunces';
+
+}
+
+footer ul {
+  display: flex;
+  gap: 32px;
+  margin-left: 103px;
+}
+
+footer ul li {
+  list-style: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  color: #83888F;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+footer ul li:hover {
+  color: white;
+}
+.footer-link{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.footer-link img:hover{
+  cursor: pointer;
+}
+
